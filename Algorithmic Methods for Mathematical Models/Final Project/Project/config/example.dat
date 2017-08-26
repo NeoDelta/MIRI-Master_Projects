@@ -1,0 +1,26 @@
+# --- Common specific parameters ------------------------------------------------------------------------------
+inputDataFile        = data/big_0.dat;        # Input DAT file
+solutionFile         = solutions/example.sol; # Output DAT file (solution)
+solver               = BRKGA;                 # Supported solvers: GRASP / BRKGA
+maxExecTime          = 6000;                   # Maximum execution time in seconds
+
+# --- Greedy specific parameters ------------------------------------------------------------------------------
+# Does not has specific parameters
+
+# --- GRASP specific parameters -------------------------------------------------------------------------------
+# Ignored if solver is not GRASP.
+alpha                = 1.0;                   # Alpha parameter for the GRASP solver.
+
+# --- BRKGA specific parameters -------------------------------------------------------------------------------
+# Ignored if solver is not BRKGA.
+fIndividuals         = 1.0;                   # Multiplication factor to compute number of individuals.
+                                              #   numIndividuals = fIndividuals * numTasks
+pElites              = 0.20;                  # % of elites in the population.
+pMutants             = 0.15;                  # % of mutants in the population.
+pInheritanceElite    = 0.7;                   # Prob. of inheriting genes from the elite parent in a cross-over
+
+# --- Local Search specific parameters ------------------------------------------------------------------------
+# Ignored if solver is not Greedy or GRASP.
+localSearch          = True;                  # Enable local search?
+neighborhoodStrategy = Reassignment;              # Supported Neighborhoods: Reassignment
+policy               = BestImprovement;       # Supported Policies: BestImprovement / FirstImprovement
