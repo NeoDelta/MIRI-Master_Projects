@@ -1,0 +1,12 @@
+INPUT(
+./release\triangle_mesh.o
+./release\mesh_io.o
+./release\main.o
+./release\main_window.o
+./release\glwidget.o
+./release\camera.o
+./release\glew.o
+./release\octree.o
+./release\moc_main_window.o
+./release\moc_glwidget.o
+);
