@@ -1,0 +1,12 @@
+INPUT(
+./debug\triangle_mesh.o
+./debug\mesh_io.o
+./debug\main.o
+./debug\main_window.o
+./debug\glwidget.o
+./debug\camera.o
+./debug\glew.o
+./debug\octree.o
+./debug\moc_main_window.o
+./debug\moc_glwidget.o
+);
